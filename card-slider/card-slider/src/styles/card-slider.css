@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: "Noto Sans" , "Arial";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(219, 219, 219);
+
+}
+
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+    
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+   
+    display: block;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    cursor: grabbing;
+}
+
+
+.card-list .card-item .card-link:hover {
+    border-color:  rgb(49, 99, 236)
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/16;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: rgb(143, 179, 229);
+    background-color: rgb(213, 228, 241);
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: rgb(49, 99, 236);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid rgb(49, 99, 236);
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #ffffff;
+    background: rgb(49, 99, 236);
+}
+
+@media screen and (max-width: 738px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}

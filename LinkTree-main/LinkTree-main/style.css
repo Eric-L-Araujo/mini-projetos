@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: slateblue;
+    background-color: slateblue; /* Fundo claro que combina com azul */
+    
+}
+  
+.container {
+    border: solid 2px  rgb(70, 50, 160);
+    background-color: #FFFFFF; /* Fundo branco para contraste */
+    width: 32em;
+    height: 20em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Borda sombreada */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 0em 2.25em 0em 2.25em;
+  
+}
+  
+.title {
+    margin: 1.5em;
+}
+  
+.subtitle {
+    margin-bottom: 0.7em;
+    font-size: 12px;
+    font-style: italic;
+}
+  
+.text {
+    margin-top: 1em;
+    font-size: 18px;
+    color: black;
+}
+  
+button {
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 5px;
+    color: white;
+    border: solid 2px  rgb(70, 50, 160);
+    background-color: rgb(106, 90, 205);
+    padding: 0.5em 1.5em 1em;
+    margin-top: 2.5em;
+    margin-left: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor:pointer;
+    
+}
+   
+.links button:hover {
+    background-color:  rgb(83, 63, 175); /* Mudar a cor ao passar o mouse */
+}
+
+
+/* XXXXXXXXXXXXXXXXXXX Design responsivo XXXXXXXXXXXXXXXXXXXXXXXX */
+@media only screen and (max-width: 538px) {
+    
+    .container {
+        height: 100vh;
+        max-height: 30em;
+        max-width: 90%;
+    }
+    
+    .text {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-size: 18px;
+        color: black;
+    }
+      
+    button {
+        
+        margin: 0.2em;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 352px) {
+    
+    .container {
+        height: 100vh;
+        max-height: 45em;
+        max-width: 100%;
+        padding: 1em;
+    }
+    
+    .text {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-size: 18px;
+        color: black;
+    }
+
+    button {
+        margin: 0.2em;
+        max-width: 100%;
+    }
+}
